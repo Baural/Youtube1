@@ -147,8 +147,6 @@ class VideoCell: BaseCell {
         //        height constraint
         addConstraint(NSLayoutConstraint(item: subtitleTextView, attribute: .height, relatedBy: .equal, toItem: self , attribute: .height, multiplier: 0 , constant: 30 ))
         
-        //        addConstraintsWithFormat(format: "V:[v0(20)]", views: titleLable)
-        //        addConstraintsWithFormat(format: "H:|[v0]|", views: titleLable)
     }
     
     

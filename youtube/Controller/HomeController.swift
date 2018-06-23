@@ -10,26 +10,6 @@ import UIKit
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-//    var videos: [Video] = {
-//        var kanyeChannel = Channel()
-//        kanyeChannel.name = "KanyeIsTheBestChannel"
-//        kanyeChannel.profileImageName = "kanye_profile"
-//
-//        var blankSpaceVideo = Video()
-//        blankSpaceVideo.title = "Taylor Swift - Blank Space"
-//        blankSpaceVideo.thumbnailImageName = "taylor_swift_blank_space"
-//        blankSpaceVideo.channel = kanyeChannel
-//        blankSpaceVideo.numberOfViews = 23932843093
-//
-//        var badBloodVideo = Video()
-//        badBloodVideo.title = "Taylor Swift - Bad Blood featuring Kendrick Lamar"
-//        badBloodVideo.thumbnailImageName = "taylor_swift_bad_blood"
-//        badBloodVideo.channel = kanyeChannel
-//        badBloodVideo.numberOfViews = 57989654934
-//
-//        return [blankSpaceVideo, badBloodVideo]
-//    }()
-    
     var videos: [Video]?
     
     func fetchVideos() {
@@ -63,14 +43,14 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
                     self.videos?.append(video)
                 }
                 
-                self.collectionView?.reloadData()
+                DispatchQueue.main.async {
+                    self.collectionView?.reloadData()
+                }
                 
             } catch let jsonError{
                 print(jsonError)
             }
             
-//            let str = String(data: data!, encoding: String.Encoding.utf8)
-//            print(str)
             
         }.resume()
     }
@@ -110,15 +90,19 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
      
         navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
     }
+    
+    let settingsLauncher = SettingsLauncher()
+    
     @objc func handleMore(){
-        
+        settingsLauncher.showSettings()
+
     }
+    
+    
     
     @objc func handleSearch(){
         print(123)
     }
-    
-    
     
     let menuBar: MenuBar = {
         let mb = MenuBar()

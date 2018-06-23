@@ -16,6 +16,7 @@
 		D9BB664A20C8415F002BBBAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BB664820C8415F002BBBAD /* Main.storyboard */; };
 		D9BB664C20C84161002BBBAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9BB664B20C84161002BBBAD /* Assets.xcassets */; };
 		D9BB664F20C84161002BBBAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BB664D20C84161002BBBAD /* LaunchScreen.storyboard */; };
+		D9D56C5E20DC119200F57E6B /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D56C5D20DC119200F57E6B /* SettingsLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D9BB664B20C84161002BBBAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9BB664E20C84161002BBBAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BB665020C84161002BBBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D56C5D20DC119200F57E6B /* SettingsLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				D9BB664620C8415F002BBBAD /* HomeController.swift */,
+				D9D56C5D20DC119200F57E6B /* SettingsLauncher.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				D9BB664720C8415F002BBBAD /* HomeController.swift in Sources */,
 				D933046920D24552008E2907 /* Video.swift in Sources */,
 				D9B6932A20CD259500136E9D /* Videocell.swift in Sources */,
+				D9D56C5E20DC119200F57E6B /* SettingsLauncher.swift in Sources */,
 				D9B6932720CD246000136E9D /* Extensions.swift in Sources */,
 				D9BB664520C8415F002BBBAD /* AppDelegate.swift in Sources */,
 				D9B6932D20CD2DC700136E9D /* MenuBar.swift in Sources */,
