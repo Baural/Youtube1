@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D933046920D24552008E2907 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933046820D24552008E2907 /* Video.swift */; };
+		D995F00920DECE2C0028EF94 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995F00820DECE2C0028EF94 /* SettingCell.swift */; };
 		D9B6932720CD246000136E9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932620CD246000136E9D /* Extensions.swift */; };
-		D9B6932A20CD259500136E9D /* Videocell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932920CD259500136E9D /* Videocell.swift */; };
+		D9B6932A20CD259500136E9D /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932920CD259500136E9D /* VideoCell.swift */; };
 		D9B6932D20CD2DC700136E9D /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932C20CD2DC700136E9D /* MenuBar.swift */; };
 		D9BB664520C8415F002BBBAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB664420C8415F002BBBAD /* AppDelegate.swift */; };
 		D9BB664720C8415F002BBBAD /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB664620C8415F002BBBAD /* HomeController.swift */; };
@@ -21,8 +22,9 @@
 
 /* Begin PBXFileReference section */
 		D933046820D24552008E2907 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D995F00820DECE2C0028EF94 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		D9B6932620CD246000136E9D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		D9B6932920CD259500136E9D /* Videocell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videocell.swift; sourceTree = "<group>"; };
+		D9B6932920CD259500136E9D /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		D9B6932C20CD2DC700136E9D /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		D9BB664120C8415F002BBBAD /* youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BB664420C8415F002BBBAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +66,9 @@
 		D9B6932820CD257A00136E9D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D9B6932920CD259500136E9D /* Videocell.swift */,
+				D9B6932920CD259500136E9D /* VideoCell.swift */,
 				D9B6932C20CD2DC700136E9D /* MenuBar.swift */,
+				D995F00820DECE2C0028EF94 /* SettingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,7 +187,8 @@
 			files = (
 				D9BB664720C8415F002BBBAD /* HomeController.swift in Sources */,
 				D933046920D24552008E2907 /* Video.swift in Sources */,
-				D9B6932A20CD259500136E9D /* Videocell.swift in Sources */,
+				D995F00920DECE2C0028EF94 /* SettingCell.swift in Sources */,
+				D9B6932A20CD259500136E9D /* VideoCell.swift in Sources */,
 				D9D56C5E20DC119200F57E6B /* SettingsLauncher.swift in Sources */,
 				D9B6932720CD246000136E9D /* Extensions.swift in Sources */,
 				D9BB664520C8415F002BBBAD /* AppDelegate.swift in Sources */,
