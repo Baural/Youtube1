@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90F070B20E018F50070E5EE /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995F00820DECE2C0028EF94 /* SettingCell.swift */; };
 		D933046920D24552008E2907 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933046820D24552008E2907 /* Video.swift */; };
-		D995F00920DECE2C0028EF94 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995F00820DECE2C0028EF94 /* SettingCell.swift */; };
 		D9B6932720CD246000136E9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932620CD246000136E9D /* Extensions.swift */; };
 		D9B6932A20CD259500136E9D /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932920CD259500136E9D /* VideoCell.swift */; };
 		D9B6932D20CD2DC700136E9D /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B6932C20CD2DC700136E9D /* MenuBar.swift */; };
@@ -187,7 +187,7 @@
 			files = (
 				D9BB664720C8415F002BBBAD /* HomeController.swift in Sources */,
 				D933046920D24552008E2907 /* Video.swift in Sources */,
-				D995F00920DECE2C0028EF94 /* SettingCell.swift in Sources */,
+				D90F070B20E018F50070E5EE /* SettingCell.swift in Sources */,
 				D9B6932A20CD259500136E9D /* VideoCell.swift in Sources */,
 				D9D56C5E20DC119200F57E6B /* SettingsLauncher.swift in Sources */,
 				D9B6932720CD246000136E9D /* Extensions.swift in Sources */,

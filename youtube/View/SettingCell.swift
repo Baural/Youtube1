@@ -7,35 +7,43 @@
 //
 
 import UIKit
-
-
-
 class SettingCell: BaseCell {
     
+    override var isHighlighted: Bool {
+        didSet{
+            backgroundColor = isHighlighted ? UIColor.darkGray : UIColor.white
+            nameLabel.textColor = isHighlighted ? UIColor.white : UIColor.black
+            iconImageView.tintColor = isHighlighted ? UIColor.white : UIColor.darkGray
+        }
+    }
     
     
     var setting: Setting? {
         didSet {
             nameLabel.text = setting?.name
+            
+            if let imageName = setting?.imageName {
+                iconImageView.image = UIImage(named: imageName)?.withRenderingMode(.alwaysTemplate)
+                iconImageView.tintColor = UIColor.darkGray
+            }
         }
     }
+    let nameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Setting" 
+        label.font = UIFont.systemFont(ofSize: 13 )
+        return label
+    }()
+    
+    let iconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "settings")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
     
     override func setupViews() {
         super.setupViews()
-        
-        let nameLabel: UILabel = {
-            let label = UILabel()
-            label.text = "Setting"
-
-            return label
-        }()
-        
-        let iconImageView: UIImageView = { 
-            let imageView = UIImageView()
-            imageView.image = UIImage(named: "settings")
-            imageView.contentMode = .scaleAspectFill
-            return imageView
-        }()
         
         addSubview(nameLabel)
         addSubview(iconImageView)
