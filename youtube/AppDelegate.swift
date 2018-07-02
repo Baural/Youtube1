@@ -34,9 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.addSubview(statusBarBackgroundView)
         window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
-//      changed original size from 20 to 30
-        window?.addConstraintsWithFormat(format: "V:|[v0(30)]|", views: statusBarBackgroundView)
-
+        window?.addConstraintsWithFormat(format: "V:|[v0(20)]|", views: statusBarBackgroundView)
+      
         return true
     }
 
