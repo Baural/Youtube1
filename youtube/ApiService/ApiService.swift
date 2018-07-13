@@ -42,9 +42,11 @@ class ApiService: NSObject {
                 for dictinary in json as! [[String: AnyObject]] {
                     
                     let video = Video()
-                    video.title = dictinary["title"] as? String
-                    video.thumbnailImageName = dictinary["thumbnail_image_name"] as? String
+//                    video.title = dictinary["title"] as? String
+//                    video.thumbnailImageName = dictinary["thumbnail_image_name"] as? String
+//                    video.numberOfViews = dictinary["number_of_views"] as? NSNumber
                     
+                    video.setValuesForKeys(dictinary)
                     
                     let channelDictionary = dictinary["channel"] as! [String: AnyObject]
                     
@@ -70,3 +72,29 @@ class ApiService: NSObject {
     }
 
 }
+
+//let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+//
+//var  videos = [Video]()
+//
+//for dictinary in json as! [[String: AnyObject]] {
+//    
+//    let video = Video()
+//    video.title = dictinary["title"] as? String
+//    video.thumbnailImageName = dictinary["thumbnail_image_name"] as? String
+//    
+//    
+//    let channelDictionary = dictinary["channel"] as! [String: AnyObject]
+//    
+//    let channel = Channel()
+//    channel.name = channelDictionary["name"] as? String
+//    channel.profileImageName = channelDictionary["profile_image_name"] as? String
+//    
+//    video.channel = channel
+//    
+//    videos.append(video)
+//}
+//
+//DispatchQueue.main.async {
+//    completion(videos)
+//}
