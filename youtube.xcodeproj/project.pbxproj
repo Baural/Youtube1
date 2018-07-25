@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D902F9452108339B0036FD29 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902F9442108339B0036FD29 /* VideoLauncher.swift */; };
 		D90F070B20E018F50070E5EE /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995F00820DECE2C0028EF94 /* SettingCell.swift */; };
 		D9167EE520EA78EE00493F10 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9167EE420EA78EE00493F10 /* FeedCell.swift */; };
 		D933046920D24552008E2907 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933046820D24552008E2907 /* Video.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D902F9442108339B0036FD29 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		D9167EE420EA78EE00493F10 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		D933046820D24552008E2907 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		D989A0CC20EB3A8E00319079 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B6932620CD246000136E9D /* Extensions.swift */,
+				D902F9442108339B0036FD29 /* VideoLauncher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				D90F070B20E018F50070E5EE /* SettingCell.swift in Sources */,
 				D9B6932A20CD259500136E9D /* VideoCell.swift in Sources */,
 				D9D56C5E20DC119200F57E6B /* SettingsLauncher.swift in Sources */,
+				D902F9452108339B0036FD29 /* VideoLauncher.swift in Sources */,
 				D9A6C75820E6B342007D386C /* ApiService.swift in Sources */,
 				D9B6932720CD246000136E9D /* Extensions.swift in Sources */,
 				D9BB664520C8415F002BBBAD /* AppDelegate.swift in Sources */,
@@ -362,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = youtube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +383,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = youtube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
